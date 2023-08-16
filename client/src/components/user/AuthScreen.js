@@ -72,11 +72,11 @@ export function AuthScreen() {
               className='flex w-full flex-col items-center'
             >
               {!isLoginView && (
-                <div className='mb-4 w-full'>
+                <div className='mb-4 mt-4 w-full'>
                   <input
                     type='text'
                     id='username'
-                    className='w-full border-b border-gray-400 bg-transparent px-2 py-2 placeholder-gray-700 hover:placeholder-opacity-80'
+                    className='w-full border-b border-gray-400 bg-transparent p-0 placeholder-gray-700 hover:placeholder-opacity-80'
                     placeholder='Username'
                     {...register('username', { required: !isLoginView })}
                   />
@@ -87,11 +87,11 @@ export function AuthScreen() {
                   )}
                 </div>
               )}
-              <div className='mb-4 w-full'>
+              <div className='mb-4 mt-4 w-full'>
                 <input
                   type='email'
                   id='email'
-                  className='w-full border-b border-gray-400 bg-transparent px-2 py-2 placeholder-gray-700 hover:placeholder-opacity-80'
+                  className='w-full border-b border-gray-400 bg-transparent p-0 placeholder-gray-700 hover:placeholder-opacity-80'
                   placeholder='Email'
                   {...register('email', { required: true })}
                 />
@@ -102,11 +102,11 @@ export function AuthScreen() {
                 )}
               </div>
 
-              <div className='mb-4 w-full'>
+              <div className='mb-4 mt-4 w-full'>
                 <input
                   type='password'
                   id='password'
-                  className='w-full border-b border-gray-400 bg-transparent px-2 py-2 placeholder-gray-700 hover:placeholder-opacity-80'
+                  className='w-full border-b border-gray-400 bg-transparent p-0 placeholder-gray-700 hover:placeholder-opacity-80'
                   placeholder='Password'
                   {...register('password', { required: true })}
                 />
