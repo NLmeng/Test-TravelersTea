@@ -18,8 +18,8 @@ const TIME_LIMT = process.env.TIME_LIMT || 24 * 60 * 60 * 1000 // 1 day
 
 const config = {
   mongo: {
-    uri: `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@cluster0.4bflh41.mongodb.net/${DB_CHOICE}?retryWrites=true&w=majority`,
-    backupuri: `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@cluster0.4bflh41.mongodb.net/${BACKUP_DB_CHOICE}?retryWrites=true&w=majority`,
+    uri: `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@nlm-cluster0.rhputyt.mongodb.net/${DB_CHOICE}?retryWrites=true&w=majority`,
+    backupuri: `mongodb+srv://${MONGO_USERNAME}:${MONGO_PASSWORD}@nlm-cluster0.rhputyt.mongodb.net/${BACKUP_DB_CHOICE}?retryWrites=true&w=majority`,
     flag: DB_CHOICE,
   },
   server: {
