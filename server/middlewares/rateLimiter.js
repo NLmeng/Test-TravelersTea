@@ -25,7 +25,12 @@ const apiLimiter = rateLimit({
       console.log('X-Request-Start:', request.headers['x-request-start'])
       console.log('User ID:', request.userId)
       console.log('Is Admin:', request.isAdmin)
-      console.log('Request Body:', request.body)
+
+      // eslint-disable-next-line node/no-unsupported-features/es-syntax
+      const requestBody = { ...request.body }
+      delete requestBody.password
+
+      console.log('Request Body:', requestBody)
     }
     return request.isAdmin || config.server.env === 'TEST'
   },
